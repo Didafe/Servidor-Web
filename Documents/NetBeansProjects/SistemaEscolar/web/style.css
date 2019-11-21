@@ -1,0 +1,136 @@
+/* 
+    Created on : 21/10/2019, 15:59:38
+    Author     : Fernando Rodrigues de Sousa
+*/
+body {
+   
+    font-family: 'Poppins', sans-serif;
+    background: url("img/background.png") no-repeat;
+    background-size: 100%;
+    /*opacity: 0.5;*/    
+}
+#content{
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+z-index:0;
+overflow:auto;
+background: url(img/pontilhado.png);
+}
+a{
+    text-decoration:none;
+    color: #2ecc71;
+}
+a:hover{
+    color:#ffffff;
+}
+table{
+    /*border: 5px solid #2ecc71;*/
+    border:none;
+    /*border-spacing: 1px solid;*/
+    /*border-collapse: colapse;*/
+    font-family: 'Poppins',  Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 2px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.8);
+}
+
+
+.titulo{
+    height: 80px;
+    font-size: 40px;
+    font-style: oblique;
+    text-shadow: rgba(0,0,0,0.8) 0.1em 0.1em 0.2em;
+    /*text-shadow:0 5px 25px rgba(0,0,0,0.8);*/
+}
+.sub-titulo{
+    height: 40px;
+    font-size: 22px;
+    text-shadow: rgba(0,0,0,0.8) 0.1em 0.1em 0.2em;
+    }
+th{
+    border: none;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    text-shadow: rgba(0,0,0,0.8) 0.1em 0.1em 0.2em;
+}
+
+.aviso{
+    height: 35px;
+    border: none;
+    background-color: #ff4000;
+    /*background-color: #FE5262;*/
+    text-shadow: rgba(0,0,0,0.8) 0.1em 0.1em 0.2em;
+}
+
+td {
+    border: none;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+td input[type = "text"] {
+    border: none;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #ABE3B2;
+    font-size: 20px;
+    transition: 0.25s;
+    width: 100%;    
+}
+
+td input{
+    border-color: #2ecc71;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #2ecc71;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+td input[type = "text"]:focus{
+    background: #2ecc71; 
+}
+td input[type="submit"]{
+    width: 100px;
+    height: 35px;
+    color: #ffffff;
+    text-shadow: rgba(0,0,0,0.8) 0.1em 0.1em 0.2em;
+}
+td input[type = "submit"]:hover{
+    transform: scale(1.1);
+    transition: 0.10s;
+    background: #2ecc71;
+    color: #ffffff;
+}
+
+.data td{
+    border: 1px solid #ABE3B2;
+}
+
+.data  tr:nth-of-type(even){
+    background-color: #ABE3B2;
+}
+.data #alterar:hover{
+    border: none;
+    transform: scale(1.1);
+    transition: 0.10s;
+    background: #99ccff;
+    color: #ffffff;
+    text-shadow: rgba(0,0,0,0.8) 0.1em 0.1em 0.2em;
+}
+.data #excluir:hover{
+    border: none;
+    transform: scale(1.1);
+    transition: 0.10s;
+    /*background: #FE5262;*/
+    background:#ff4000;
+    color: #ffffff;
+    text-shadow: rgba(0,0,0,0.8) 0.1em 0.1em 0.2em;
+}
